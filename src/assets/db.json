@@ -59,6 +59,24 @@
       "email": "sda",
       "name": "asda",
       "password": "asdfa"
+    },
+    {
+      "id": "f0f4",
+      "name": "Dakesh",
+      "email": "daku@gmail.com",
+      "password": 123
+    },
+    {
+      "id": "b084",
+      "email": "ritesh@test.com",
+      "name": "ritesh",
+      "password": "test"
+    },
+    {
+      "id": "21d5",
+      "email": "lkhnjl",
+      "name": "uhjfjhj",
+      "password": "ohnkjn"
     }
   ]
 }
