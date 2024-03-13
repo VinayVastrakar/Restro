@@ -47,26 +47,8 @@
     {
       "name": "Biryani Hub",
       "address": "Mareen drive 005",
-      "contact": "09876678",
+      "contact": "000111222",
       "id": "5a3c"
-    },
-    {
-      "id": "c880",
-      "name": "Sama Biryani",
-      "address": "Bhilai",
-      "contact": "324231345"
-    },
-    {
-      "id": "b1ec",
-      "name": "KFCass",
-      "address": "Raipur pachpedi",
-      "contact": "1111111111"
-    },
-    {
-      "id": "e6b1",
-      "name": "KFCass",
-      "address": "Raipur pachpedi",
-      "contact": "1111111111"
     }
   ]
 }
