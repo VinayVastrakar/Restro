@@ -36,6 +36,10 @@ body{
   margin-left: auto;
   margin-right: auto;
 }
+table{
+    display: grid;
+    justify-content: center;
+}
 
 .register button, .login button , .add button {
   width: 320px;

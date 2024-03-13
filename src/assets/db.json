@@ -25,24 +25,48 @@
       "password": "123"
     }
   ],
-  "restaurant":[
+  "restaurant": [
     {
-      "id":1,
-      "name":"KFC",
-      "address":"Raipur pachpedi naka",
-      "contact":434323434
+      "name": "KFC",
+      "address": "Raipur pachpedi naka",
+      "contact": 434323434,
+      "id": "1"
     },
     {
-      "id":2,
-      "name":"Burger King",
-      "address":"Raipur pachpedi naka",
-      "contact":9876567
+      "id": "2",
+      "name": "Burger King",
+      "address": "Raipur pachpedi naka",
+      "contact": 9876567
     },
     {
-      "id":3,
-      "name":"Dominos",
-      "address":"Raipur City Center",
-      "contact":55555666
+      "name": "Dominos",
+      "address": "Mere ghar me",
+      "contact": 55555666,
+      "id": "3"
+    },
+    {
+      "name": "Biryani Hub",
+      "address": "Mareen drive 005",
+      "contact": "09876678",
+      "id": "5a3c"
+    },
+    {
+      "id": "c880",
+      "name": "Sama Biryani",
+      "address": "Bhilai",
+      "contact": "324231345"
+    },
+    {
+      "id": "b1ec",
+      "name": "KFCass",
+      "address": "Raipur pachpedi",
+      "contact": "1111111111"
+    },
+    {
+      "id": "e6b1",
+      "name": "KFCass",
+      "address": "Raipur pachpedi",
+      "contact": "1111111111"
     }
   ]
 }
