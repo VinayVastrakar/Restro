@@ -17,6 +17,12 @@
       "name": "Shubham",
       "email": "subbu@gmail.com",
       "password": 123
+    },
+    {
+      "id": "c0a0",
+      "email": "daku@gmail.com",
+      "name": "Dakesh",
+      "password": "123"
     }
   ]
 }

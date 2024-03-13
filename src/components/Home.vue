@@ -1,49 +1,16 @@
 <template>
-  <div>
-    <header>
-      <nav>
-        <div class="container">
-          <div class="logo">
-            <h1>Your E-commerce</h1>
-          </div>
-          <ul class="menu">
-            <li><router-link to="/">Home</router-link></li>
-            <li><router-link to="/about">About us</router-link></li>
-            <li><router-link to="/products">Products</router-link></li>
-            <li><router-link to="/contact">Contact us</router-link></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    
-    <main>
-      <section class="banner">
-        <div class="container">
-          <img src="" alt="Banner Image">
-          <h2>Welcome to Your E-commerce Platform</h2>
-        </div>
-      </section>
-      
-      <section class="about-us">
-        <div class="container">
-          <h2>About Us</h2>
-          <p>This is where you can introduce your e-commerce platform, talk about your mission, vision, and values, and share any other relevant information about your company.</p>
-        </div>
-      </section>
-      
-      <section class="contact-us">
-        <div class="container">
-          <h2>Contact Us</h2>
-          <p>Contact us section content...</p>
-        </div>
-      </section>
-    </main>
-  </div>
+  <Header/>
+  <h1>Hello this is Home Page</h1>
 </template>
 
 <script>
+import Header from './Header.vue';
+
 export default {
   name: "HomePage",
+  components:{
+    Header
+  },
   mounted() {
     let user = localStorage.getItem("user-info");
     if (!user) {
@@ -123,5 +90,4 @@ header {
 .contact-us p {
   text-align: center;
 }
-
 </style>
