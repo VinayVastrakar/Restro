@@ -1,99 +1,52 @@
 <template>
-  <Header/>
-  <h1>Hello {{name}} Welcom on Home Page</h1>
+  <Header />
+  <h1>Hello {{ name }} Welcom on Home Page</h1>
+  <table border=1>
+  <tr>
+  <td>Id</td>
+  <td>Name</td>
+  <td>Address</td>
+  <td>Contact</td>
+  </tr>
+  <tr v-for="item in restaurants" :key="item.id">
+  <td>{{item.id}}</td>
+  <td>{{item.name}}</td>
+  <td>{{item.address}}</td>
+  <td>{{item.contact}}</td>
+  </tr>
+  </table>
 </template>
 
 <script>
-import Header from './Header.vue';
+import axios from "axios";
+import Header from "./Header.vue";
 
 export default {
   name: "HomePage",
-  data(){
-    return{
-      name:''
-    }
+  data() {
+    return {
+      name: "",
+      restaurants: [],
+    };
   },
-  components:{
-    Header
+  components: {
+    Header,
   },
-  mounted() {
+  async mounted() {
     let user = localStorage.getItem("user-info");
-    this.name = JSON.parse(user).name
+    this.name = JSON.parse(user).name;
     if (!user) {
       this.$router.push({ name: "SignUp" });
     }
+    let result = await axios.get("http://localhost:3000/restaurant");
+    console.warn(result);
+    this.restaurants = result.data;
   },
 };
 </script>
-
-<style scoped>
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.container .logo {
-  text-align: center;
-  padding-bottom: 10px;
-  padding: auto;
-}
-
-header {
-  background-color: #333;
-  padding: 10px 0;
-  color: white;
-}
-
-.logo h1 {
-  font-size: 24px;
-}
-
-.menu {
-  list-style: none;
-  float: right;
-}
-
-.menu li {
-  display: inline-block;
-  margin-left: 20px;
-}
-
-.menu li a {
-  text-decoration: none;
-  color: black;
-}
-
-.banner {
-  text-align: center;
-  padding: 50px 0;
-  background-color: #f8f8f8;
-}
-
-.banner img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 20px;
-}
-
-.banner h2 {
-  font-size: 36px;
-  color: #333;
-}
-
-.about-us,
-.contact-us {
-  padding: 50px 0;
-}
-
-.about-us h2,
-.contact-us h2 {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.about-us p,
-.contact-us p {
-  text-align: center;
+<style>
+td{
+  width:160px;
+  height: 40px;
 }
 </style>
